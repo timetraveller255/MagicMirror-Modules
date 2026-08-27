@@ -88,5 +88,5 @@ HTML5 Video, Youtube, Vimeo, Soundcloud (playlist tracks must have embeded-playe
 	}
 
 Designed by Răzvan Cristea
-https://github.com/razvanh255
+https://github.com/timetraveller255
 Creative Commons BY-NC-SA 4.0, Romania.
