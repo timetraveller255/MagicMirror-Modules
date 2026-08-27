@@ -60,4 +60,4 @@ The `quotes` module allows you to pick quotes randomly
 You can edit the `quotes.js` file and add/remove quotes from the various sections. You may even delete an entire
 section.
 
-Redesigned by Răzvan Cristea https://github.com/razvanh255 Creative Commons BY-NC-SA 4.0, Romania.
+Redesigned by Răzvan Cristea https://github.com/timetraveller255 Creative Commons BY-NC-SA 4.0, Romania.
