@@ -24,4 +24,4 @@ To use this module, add it to the modules array in the config/config.js file:
 
 Localization is provided by moment.js and controlled by the master language of MagicMirror. Please file any errors with localizations as bugs with the moment.js team - https://github.com/moment/moment/
 
-Redesigned by Răzvan Cristea https://github.com/cristearazvanh Creative Commons BY-NC-SA 4.0, Romania.
+Redesigned by Răzvan Cristea https://github.com/timetraveller255 Creative Commons BY-NC-SA 4.0, Romania.
