@@ -77,5 +77,5 @@ Air Quality compliments to put in your config.js
 	}
 
 Designed by Răzvan Cristea
-https://github.com/razvanh255
+https://github.com/timetraveller255
 Creative Commons BY-NC-SA 4.0, Romania.
