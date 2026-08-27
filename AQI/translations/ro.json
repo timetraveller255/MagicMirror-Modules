@@ -1,0 +1,36 @@
+{
+	"LOADING": "Se încarcă Air Quality Index (AQI)...",
+	"AQI": "Calitatea aerului",
+	"LAST_UPDATE": "Ultimul update",
+	"NO_DATA_AVAILABLE": "Nu sunt date disponiobile",
+	"CONNECTION_ERROR": "Nu se poate conecta",
+	"API_ERROR": "Eroare",
+
+	"CONFIG_ERROR_NO_TOKEN": "Vă rugăm să configurați tokenul API în setările modulului",
+	"CONFIG_ERROR_NO_CITY": "Vă rugăm să specificați un oraș în configurația modulului",
+	"CONFIG_ERROR_UPDATE_INTERVAL": "Intervalul de actualizare trebuie să fie de cel puțin 60 de secunde",
+
+	"GOOD": "Bun",
+	"MODERATE": "Moderat",
+	"UNHEALTHY_SENSITIVE": "Nesănătos pentru persoane sensibile",
+	"UNHEALTHY": "Nesănătos",
+	"VERY_UNHEALTHY": "Foarte nesănătos",
+	"HAZARDOUS": "Foarte periculos",
+
+	"IAQI_PM25": "PM2.5",
+	"IAQI_PM25_DESC": "particule fine",
+	"IAQI_PM10": "PM10",
+	"IAQI_PM10_DESC": "particule brute",
+	"IAQI_O3": "O₃",
+	"IAQI_O3_DESC": "ozon",
+	"IAQI_NO2": "NO₂",
+	"IAQI_NO2_DESC": "dioxid de azot",
+	"IAQI_SO2": "SO₂",
+	"IAQI_SO2_DESC": "dioxid de sulfur",
+	"IAQI_CO": "CO",
+	"IAQI_CO_DESC": "monoxid de carbon",
+	"IAQI_T": "Temperatură",
+	"IAQI_H": "Umiditate",
+	"IAQI_P": "Presiune",
+	"IAQI_W": "Viteza vântului"
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Swatch it";
+  font-style: normal;
+  font-weight: 100;
+  src: url("swatch.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Swiss 911 Ultra Compressed";
+  font-style: normal;
+  font-weight: 100;
+  src: url("swiss.otf") format("opentype");
+}
+
+.beat {
+  font-family: "Swatch it" !important;
+  margin-left: 12%;
+}

@@ -1,0 +1,10 @@
+{
+  "CPU_USAGE": "CPU",
+  "CPU_TEMP": "Temp.",
+  "Memory": "RAM",
+  "Disk": "DSK",
+  "Uptime": "Uptime",
+  "ETH": "Ethernet",
+  "WIFI": "WiFi",
+  "GATHERING_INFO": "Aduc informații..."
+}

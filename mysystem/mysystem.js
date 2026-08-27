@@ -1,0 +1,186 @@
+Module.register("mysystem", {
+
+  defaults: {
+    showHeader: true,
+    showCPUusage: true,
+    showCPUtemp: true, 
+    showMemory: true,
+    showDisk: true,
+    showUptime: false,
+    showIPeth: true,
+    showIPwifi: true,
+    tempUnit: "C",
+    osVersion: "Trixie",
+    updateInterval: 10000,
+    language: config.language,
+    customCommands: {}
+  },
+
+  getStyles: function() {
+    return ["mysystem.css"];
+  },
+
+  getTranslations: function() {
+    return {
+      en: "translations/en.json",
+      ro: "translations/ro.json",
+      nl: "translations/nl.json",
+      de: "translations/de.json",
+      fr: "translations/fr.json"
+    };
+  },
+
+  start: function () {
+    Log.info("Starting module: " + this.name);
+    this.systemData = {};
+    this.sendSocketNotification("CONFIG", this.config);
+    setInterval(() => this.sendSocketNotification("UPDATE"), this.config.updateInterval);
+  },
+
+  socketNotificationReceived: function(notification, payload) {
+    if (notification === "SYSTEM_DATA") {
+      this.systemData = payload;
+      this.updateDom();
+    }
+  },
+
+  getDom: function() {
+    const wrapper = document.createElement("div");
+    wrapper.className = "mySystem";
+
+    if (!this.systemData || Object.keys(this.systemData).length === 0) {
+      wrapper.innerHTML = this.translate("GATHERING_INFO");
+      return wrapper;
+    }
+
+    // --- Header block (3 rows) ---
+    if (this.config.showHeader) {
+      const headerBlock = document.createElement("div");
+      headerBlock.className = "system-header-block";
+
+      // Row 1: Hostname
+      const headerRow1 = document.createElement("div");
+      headerRow1.className = "system-header hidden";
+      const left1 = document.createElement("div");
+      left1.className = "system-left";
+      left1.innerHTML = this.systemData.hostname || "Hostname N/A";
+      headerRow1.appendChild(left1);
+      headerBlock.appendChild(headerRow1);
+
+      // Row 2: Pi model
+      const headerRow2 = document.createElement("div");
+      headerRow2.className = "system-header";
+      const left2 = document.createElement("div");
+      left2.className = "system-left";
+      left2.innerHTML = this.systemData.model || "Model N/A";
+      headerRow2.appendChild(left2);
+      headerBlock.appendChild(headerRow2);
+
+      // Row 3: OS version
+      const headerRow3 = document.createElement("div");
+      headerRow3.className = "system-header";
+      const left3 = document.createElement("div");
+      left3.className = "system-left";
+      left3.innerHTML = this.systemData.osVersion || "OS N/A";
+      headerRow3.appendChild(left3);
+      headerBlock.appendChild(headerRow3);
+
+      // Blank line after header
+      headerBlock.style.marginBottom = "10px";
+
+      wrapper.appendChild(headerBlock);
+    }
+
+    // --- System items ---
+    const items = [
+      { show: this.config.showCPUusage, key: "cpuUsage", icon: "", label: "CPU_USAGE" },
+      { show: this.config.showCPUtemp, key: "cpuTemp", icon: "", label: "CPU_TEMP" },
+      { show: this.config.showMemory, key: "memory", icon: "", label: "Memory" },
+      { show: this.config.showDisk, key: "disk", icon: "", label: "Disk" },
+      { show: this.config.showUptime, key: "uptime", icon: "", label: "Uptime" }
+    ];
+
+    items.forEach(item => {
+      if (!item.show || !this.systemData[item.key]) return;
+
+      const row = document.createElement("div");
+      row.className = "system-row";
+
+      const left = document.createElement("div");
+      left.className = "system-left";
+      left.innerHTML = `${item.icon} ${this.translate(item.label)}`;
+
+      const right = document.createElement("div");
+      right.className = "system-right";
+
+      let value = this.systemData[item.key] || "N/A";
+      let statusClass = "";
+
+      // --- Status colors ---
+      if (item.key === "cpuTemp") {
+        // Parse numeric value
+        let tempValue = parseFloat(value) || 0;
+
+        // Set thresholds depending on unit
+        let hotThreshold = 80; // °C
+        let warnThreshold = 70; // °C
+        if (this.config.tempUnit === "F") {
+          hotThreshold = 176; // 80°C
+          warnThreshold = 158; // 70°C
+        }
+
+        if (tempValue >= hotThreshold) statusClass = "cpu-hot";
+        else if (tempValue >= warnThreshold) statusClass = "cpu-warn";
+      }
+
+      if (item.key === "cpuUsage") {
+        const cpu = parseFloat(value || 0);
+        if (cpu >= 95) statusClass = "cpuusage-hot";
+        else if (cpu >= 85) statusClass = "cpuusage-warn2";
+        else if (cpu >= 70) statusClass = "cpuusage-warn";
+      }
+
+      if (item.key === "memory") {
+        const mem = parseFloat(value || 0);
+        if (mem >= 90) statusClass = "mem-hot";
+        else if (mem >= 80) statusClass = "mem-warn";
+      }
+
+      if (item.key === "disk") {
+        const match = value.match(/\((\d+)%\)/);
+        if (match) {
+          const diskPct = parseInt(match[1]);
+          if (diskPct >= 95) statusClass = "disk-hot";
+          else if (diskPct >= 85) statusClass = "disk-warn";
+        }
+      }
+
+      right.className += " " + statusClass;
+      right.innerHTML = value;
+
+      row.appendChild(left);
+      row.appendChild(right);
+      wrapper.appendChild(row);
+    });
+
+    // --- IPs ---
+    if (this.config.showIPeth && this.systemData.ethIP) {
+      const row = document.createElement("div");
+      row.className = "system-row";
+      row.innerHTML = `<div class="system-left">${this.translate("ETH")}</div>
+                       <div class="system-right">${this.systemData.ethIP}</div>`;
+      wrapper.appendChild(row);
+    }
+
+    if (this.config.showIPwifi && this.systemData.wifiIP) {
+      const row = document.createElement("div");
+      row.className = "system-row";
+      row.innerHTML = `<div class="system-left">${this.translate("WIFI")}</div>
+                       <div class="system-right">${this.systemData.wifiIP}</div>`;
+      wrapper.appendChild(row);
+    }
+
+    return wrapper;
+  }
+
+});

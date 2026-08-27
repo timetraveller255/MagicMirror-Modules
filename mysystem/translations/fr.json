@@ -1,0 +1,10 @@
+{
+  "CPU_USAGE": "Utilisation CPU",
+  "CPU_TEMP": "Température CPU",
+  "Memory": "Mémoire libre",
+  "Disk": "Espace Disque libre",
+  "Uptime": "Temps d’activité",
+  "ETH": "Ethernet",
+  "WIFI": "WiFi",
+  "GATHERING_INFO": "Collecte des informations......."
+}
