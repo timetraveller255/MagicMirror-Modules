@@ -6,7 +6,7 @@
 [![GitHub forks](https://badgen.net/github/forks/cristearazvanh/notification_timer)](https://github.com/cristearazvanh/notification_timer)
 [![GitHub stars](https://badgen.net/github/stars/cristearazvanh/notification_timer)](https://github.com/cristearazvanh/notification_timer)
 
-https://github.com/cristearazvanh/notification_timer
+
 
 MagicMirror 2 Notification receiver, dimmer, alert & timer trigger for my own use on iPad3, 
 because the default alert module is full of shit! 
@@ -56,4 +56,4 @@ All settings inside of module or in config.js
 		}
 	},
 
-	Designed by Răzvan Cristea https://github.com/cristearazvanh Creative Commons BY-NC-SA 4.0, Romania.
+	Designed by Răzvan Cristea https://github.com/timetraveller255 Creative Commons BY-NC-SA 4.0, Romania.
