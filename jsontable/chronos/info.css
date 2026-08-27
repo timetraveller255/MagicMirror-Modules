@@ -1,0 +1,66 @@
+html {
+	overflow: auto !important;
+}
+
+.region.top.right, .region.top.left {
+	width: 32.5% !important;
+}
+
+.region.top.center {
+	width: 32.5% !important;
+	transform: translateX(-50%) !important;
+}
+
+.jsontable thead {
+	background: rgba(128,128,128,0.5);
+}
+
+.jsontable table td {
+	text-align: center !important;
+}
+
+.hettich table td:nth-child(2) {
+	text-transform: lowercase !important;
+}
+
+.hettich table td::first-letter {
+	text-transform: uppercase !important;
+}
+
+.jsontable .info {
+	font-size: calc(8pt + (12 - 8) * (100vw - 1080px) / (1920 - 1080));
+}
+
+.simpletext .spacer0 {
+	display: block;
+	height: 5px;
+}
+
+.simpletext .spacer1 {
+	display: block;
+	height: 0;
+}
+
+.simpletext .spacer2 {
+	display: block;
+	height: 18px;
+}
+
+.onecall .weathericon {
+	float: right !important;
+	margin-left: 20px;
+	font-size: 75%;
+	margin-top: -8px;
+}
+
+.currentweather .deg {
+ 	margin-left: -25px;
+}
+
+.logos {
+ 	height: 100px;
+}
+
+.clockGrid {
+	gap: 15px !important;
+}

@@ -1,0 +1,15 @@
+.jsontable {
+	max-width: 420px;
+}
+.jsontable thead {
+	background: rgba(128,128,128,0.5);
+}
+
+.jsontable table {
+	margin-bottom: 10px;
+}
+
+.jsontable td:nth-child(n+2) {
+	text-align: right;
+	width: 30%;
+}

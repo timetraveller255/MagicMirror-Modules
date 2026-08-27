@@ -1,0 +1,34 @@
+.system-stats {
+    min-width: 100%;
+    line-height: 1rem;
+}
+
+.system header {
+  border-bottom: none !important;
+}
+
+.system-stats .cpu-usage, 
+.system-stats .cpu-temp, 
+.system-stats .ram-usage {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.system-stats progress {
+    width: 90% !important;
+    height: 15px !important;
+/*
+    background-color: skyblue !important;
+    border-radius: 8px !important;
+    border: 1px solid white !important;
+    transition: all .5s ease-in-out !important;
+*/
+}
+
+.system-stats strong {
+    font-weight: bold;
+}
+
+.system-stats div {
+    margin: 2px 0;
+}

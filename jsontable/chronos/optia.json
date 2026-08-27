@@ -1,0 +1,172 @@
+{
+    "Optia": [
+        {
+            "No": "1",
+            "Client": "IRO Iasi",
+            "Serial": "1P01016",
+            "Hours": "1498",
+            "Runs": "256",
+            "Soft": "11.3.1",
+            "Setup": "2011",
+            "PM": "01.2023",
+            "Year": "2011",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "2",
+            "Client": "Coltea",
+            "Serial": "1P01129",
+            "Hours": "1356",
+            "Runs": "244",
+            "Soft": "11.3.1",
+            "Setup": "10.02.2014",
+            "PM": "08.2022",
+            "Year": "2011",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "3",
+            "Client": "Timisoara",
+            "Serial": "1P01727",
+            "Hours": "491",
+            "Runs": "96",
+            "Soft": "11.3.1",
+            "Setup": "22.04.2013",
+            "PM": "03.2023",
+            "Year": "2013",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "4",
+            "Client": "Elias",
+            "Serial": "1P01935",
+            "Hours": "369",
+            "Runs": "81",
+            "Soft": "11.3.1",
+            "Setup": "09.08.2013",
+            "PM": "10.2022",
+            "Year": "2013",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "5",
+            "Client": "Fundeni 1",
+            "Serial": "1P02950",
+            "Hours": "1632",
+            "Runs": "309",
+            "Soft": "11.3.1",
+            "Setup": "19.02.2015",
+            "PM": "12.2022",
+            "Year": "2015",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "6",
+            "Client": "Fundeni 2",
+            "Serial": "1P05592",
+            "Hours": "2421",
+            "Runs": "452",
+            "Soft": "11.3.1",
+            "Setup": "29.06.2018",
+            "PM": "03.2023",
+            "Year": "2018",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "7",
+            "Client": "Parhon Iasi",
+            "Serial": "1P05635",
+            "Hours": "851",
+            "Runs": "427",
+            "Soft": "11.3.1",
+            "Setup": "27.07.2018",
+            "PM": "01.2023",
+            "Year": "2018",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "8",
+            "Client": "Universitar",
+            "Serial": "1P05647",
+            "Hours": "1044",
+            "Runs": "130",
+            "Soft": "11.3.1",
+            "Setup": "26.11.2018",
+            "PM": "12.2022",
+            "Year": "2018",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "9",
+            "Client": "Tg Mures 1",
+            "Serial": "1P05679",
+            "Hours": "562",
+            "Runs": "101",
+            "Soft": "11.3.1",
+            "Setup": "03.12.2018",
+            "PM": "02.2023",
+            "Year": "2018",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "10",
+            "Client": "Tg Mures 2",
+            "Serial": "1P06202",
+            "Hours": "275",
+            "Runs": "51",
+            "Soft": "11.3.1",
+            "Setup": "03.06.2019",
+            "PM": "02.2023",
+            "Year": "2019",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "11",
+            "Client": "Tg Mures 3",
+            "Serial": "1P06246",
+            "Hours": "229",
+            "Runs": "80",
+            "Soft": "11.3.1",
+            "Setup": "03.06.2019",
+            "PM": "02.2023",
+            "Year": "2019",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "12",
+            "Client": "V. Babes",
+            "Serial": "1P06356",
+            "Hours": "3",
+            "Runs": "1",
+            "Soft": "11.3.1",
+            "Setup": "13.08.2019",
+            "PM": "02.2020",
+            "Year": "2019",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "13",
+            "Client": "IOCN Cluj",
+            "Serial": "1P06955",
+            "Hours": "4",
+            "Runs": "1",
+            "Soft": "11.3.2",
+            "Setup": "-",
+            "PM": "02.2022",
+            "Year": "2020",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "14",
+            "Client": "Fundeni 3",
+            "Serial": "1P07449",
+            "Hours": "103",
+            "Runs": "23",
+            "Soft": "11.3.2",
+            "Setup": "14.09.2021",
+            "PM": "03.2023",
+            "Year": "2021",
+            "Tech": "Ciobanu"
+        }
+    ]
+}

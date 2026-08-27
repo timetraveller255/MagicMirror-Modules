@@ -1,0 +1,28 @@
+{
+    "Reveos": [
+        {
+            "No": "1",
+            "Client": "CTS Bucuresti",
+            "Serial": "1W00202",
+            "Hours": "1422",
+            "Runs": "4163",
+            "Soft": "1.1",
+            "Setup": "01.2022",
+            "PM": "05.2022",
+            "Year": "?",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "2",
+            "Client": "CTS Bucuresti",
+            "Serial": "1W00304",
+            "Hours": "1724",
+            "Runs": "5152",
+            "Soft": "1.1",
+            "Setup": "01.2022",
+            "PM": "05.2022",
+            "Year": "?",
+            "Tech": "Ionescu"
+        }
+    ]
+}

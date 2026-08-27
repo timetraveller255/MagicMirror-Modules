@@ -1,0 +1,346 @@
+{
+    "Hettich": [
+        {
+            "No": "1",
+            "Client": "ARAD",
+            "Serial": "0002293-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "2",
+            "Client": "ARGES",
+            "Serial": "0002286-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "3",
+            "Client": "BIHOR",
+            "Serial": "0002289-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "4",
+            "Client": "BIHOR",
+            "Serial": "?",
+            "Soft": "?",
+            "Setup": "?",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "5",
+            "Client": "BISTRITA",
+            "Serial": "0002292-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "6",
+            "Client": "BOTOSANI",
+            "Serial": "0002351-29",
+            "Soft": "8.110",
+            "Setup": "05.2022",
+            "PM": "05.2023",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "7",
+            "Client": "BRASOV",
+            "Serial": "0002287-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "8",
+            "Client": "BUZAU",
+            "Serial": "0002264-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "9",
+            "Client": "CALARASI",
+            "Serial": "0002352-29",
+            "Soft": "8.110",
+            "Setup": "07.2022",
+            "PM": "07.2023",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "10",
+            "Client": "CARAS",
+            "Serial": "0002291-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "11",
+            "Client": "CLUJ",
+            "Serial": "0002274-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "12",
+            "Client": "CONSTANTA",
+            "Serial": "0002268-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "13",
+            "Client": "COVASNA",
+            "Serial": "0002354-29",
+            "Soft": "8.110",
+            "Setup": "05.2022",
+            "PM": "05.2023",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "14",
+            "Client": "DAMBOVITA",
+            "Serial": "0002285-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "15",
+            "Client": "DOLJ",
+            "Serial": "0002269-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "16",
+            "Client": "GALATI",
+            "Serial": "0002280-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "17",
+            "Client": "GIURGIU",
+            "Serial": "0002356-29",
+            "Soft": "8.110",
+            "Setup": "07.2022",
+            "PM": "07.2023",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "18",
+            "Client": "GORJ",
+            "Serial": "0002265-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "19",
+            "Client": "HARGHITA",
+            "Serial": "0002267-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "20",
+            "Client": "HUNEDOARA",
+            "Serial": "0002283-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "21",
+            "Client": "IALOMITA",
+            "Serial": "0002266-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "22",
+            "Client": "IASI",
+            "Serial": "0002273-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "23",
+            "Client": "MARAMURES",
+            "Serial": "0002279-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "24",
+            "Client": "MEHEDINTI",
+            "Serial": "0002270-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "25",
+            "Client": "MURES",
+            "Serial": "0002278-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "26",
+            "Client": "NEAMT",
+            "Serial": "0002272-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "27",
+            "Client": "PRAHOVA",
+            "Serial": "0002284-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "28",
+            "Client": "SATU-MARE",
+            "Serial": "0002290-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "29",
+            "Client": "SALAJ",
+            "Serial": "0002295-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "30",
+            "Client": "SIBIU",
+            "Serial": "0002275-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "31",
+            "Client": "SUCEAVA",
+            "Serial": "0002277-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "32",
+            "Client": "TELEORMAN",
+            "Serial": "0002353-29",
+            "Soft": "8.110",
+            "Setup": "05.2022",
+            "PM": "05.2023",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "33",
+            "Client": "TIMIS",
+            "Serial": "0002282-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ciobanu"
+        },
+        {
+            "No": "34",
+            "Client": "TULCEA",
+            "Serial": "0002353-29",
+            "Soft": "8.110",
+            "Setup": "05.2022",
+            "PM": "05.2023",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "35",
+            "Client": "VALCEA",
+            "Serial": "0002281-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        },
+        {
+            "No": "36",
+            "Client": "VASLUI",
+            "Serial": "0002355-29",
+            "Soft": "8.110",
+            "Setup": "05.2022",
+            "PM": "05.2023",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "37",
+            "Client": "VRANCEA",
+            "Serial": "0002276-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Cristea"
+        },
+        {
+            "No": "38",
+            "Client": "Bucuresti",
+            "Serial": "0002288-29",
+            "Soft": "8.110",
+            "Setup": "12.2021",
+            "PM": "12.2022",
+            "Tech": "Ionescu"
+        }
+    ]
+}
