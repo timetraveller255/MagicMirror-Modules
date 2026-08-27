@@ -1,0 +1,233 @@
+<!--
+ * Remote control
+ * Copyright 2026, Razvan Cristea. All rights reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>MAGICMIRROR // LCARS</title>
+    <link rel="stylesheet" href="/control/control.css">
+</head>
+<body>
+    <div class="screen">
+        <header class="top">
+            <div class="brand">
+                <div class="brand-code">LCARS<br>MM-01</div>
+            </div>
+            <div class="title">
+                <div class="main-title">MAGICMIRROR</div>
+                <div class="sub-title">REMOTE CONTROL SYSTEM</div>
+            </div>
+            <div class="system">
+                <div class="system-title">SYSTEM STATUS</div>
+                <div class="system-state">
+                    <span id="statusLed" class="offline"></span>
+                    <span id="connectionText">OFFLINE</span>
+                </div>
+            </div>
+            <div class="telemetry">
+                <div class="telemetry-box blue">
+                    <span>TIME</span>
+                    <b id="clock">--:--:--</b>
+                </div>
+                <div class="telemetry-box purple">
+                    <span>HOST</span>
+                    <b id="hostname">--------</b>
+                </div>
+                <div class="telemetry-box orange">
+                    <span>DATE</span>
+                    <b id="date">--.--.----</b>
+                </div>
+                <div class="telemetry-box yellow">
+                    <span>UPTIME</span>
+                    <b id="uptime">--:--:--</b>
+                </div>
+            </div>
+        </header>
+        <div class="top-bar">
+            <span></span>
+            <i></i>
+            <span></span>
+            <b>LCARS ACCESS 47-71-24</b>
+            <em></em>
+        </div>
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="side-row purple">
+                    <small>01-235</small>
+                    <strong>DISPLAY</strong>
+                </div>
+                <div class="side-row blue">
+                    <small>02-467</small>
+                    <strong>SYSTEM</strong>
+                </div>
+                <div class="side-row purple">
+                    <small>03-918</small>
+                    <strong>NETWORK</strong>
+                </div>
+                <div class="side-row blue">
+                    <small>04-205</small>
+                    <strong>SERVICES</strong>
+                </div>
+                <div class="side-row red">
+                    <small>05-722</small>
+                    <strong>SECURITY</strong>
+                </div>
+                <div class="side-row purple">
+                    <small>06-309</small>
+                    <strong>DIAGNOSTIC</strong>
+                </div>
+                <div class="side-row blue">
+                    <small>07-101</small>
+                    <strong>CONTROL</strong>
+                </div>
+                <div class="side-row purple">
+                    <small>08-402</small>
+                    <strong>SETTINGS</strong>
+                </div>
+                <div class="lcars-block">
+                    <div>LCARS</div>
+                    <strong>74205</strong>
+                    <span>98-32451</span>
+                </div>
+            </aside>
+            <main class="main">
+                <section>
+                    <div class="section-head">
+                        <strong>01</strong>
+                        <span>DISPLAY SYSTEM</span>
+                        <i></i>
+                    </div>
+                    <div class="command-grid">
+                        <button class="command orange" data-command="x11">
+                            <div class="command-content">
+                                <strong>RESTART X11</strong>
+                                <span>restartx.sh</span>
+                            </div>
+                            <b>01-235-11</b>
+                        </button>
+                        <button class="command purple" data-command="wayland">
+                            <div class="command-content">
+                                <strong>RESTART WAYLAND</strong>
+                                <span>restartw.sh</span>
+                            </div>
+                            <b>01-235-12</b>
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-head">
+                        <strong>02</strong>
+                        <span>SYSTEM CONTROL</span>
+                        <i></i>
+                    </div>
+                    <div class="command-grid">
+                        <button class="command blue" data-command="server">
+                            <div class="command-content">
+                                <strong>RESTART SERVER</strong>
+                                <span>restarts.sh</span>
+                            </div>
+                            <b>02-467-21</b>
+                        </button>
+                        <button class="command red" data-command="reboot">
+                            <div class="command-content">
+                                <strong>REBOOT RASPBERRY PI</strong>
+                                <span>system restart</span>
+                            </div>
+                            <b>02-467-22</b>
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-head">
+                        <strong>03</strong>
+                        <span>CHANGE SHIP</span>
+                        <i></i>
+                    </div>
+                    <div class="command-grid">
+                        <button class="command orange" data-command="startrek">
+                            <div class="command-content">
+                                <strong>STAR TREK</strong>
+                                <span>startrek.sh</span>
+                            </div>
+                            <b>02-467-21</b>
+                        </button>
+                        <button class="command purple" data-command="starwars">
+                            <div class="command-content">
+                                <strong>STAR WARS</strong>
+                                <span>starwars.sh</span>
+                            </div>
+                            <b>02-467-22</b>
+                        </button>
+                        <button class="command blue" data-command="classic">
+                            <div class="command-content">
+                                <strong>CLASSIC</strong>
+                                <span>classic.sh</span>
+                            </div>
+                            <b>02-467-21</b>
+                        </button>
+                        <button class="command red" data-command="pinkfloyd">
+                            <div class="command-content">
+                                <strong>PINK FLOYD</strong>
+                                <span>pinkfloyd.sh</span>
+                            </div>
+                            <b>02-467-22</b>
+                        </button>
+                    </div>
+                </section>
+                <section class="log-section">
+                    <div class="section-head">
+                        <strong>03</strong>
+                        <span>COMMAND LOG</span>
+                        <i></i>
+                    </div>
+                    <div class="log-frame">
+                        <div id="commandLog" class="command-log">
+                            <div class="log-line">
+                                <time>--:--:--</time>
+                                <b>SYS</b>
+                                <span>MAGICMIRROR REMOTE CONTROL READY</span>
+                            </div>
+                        </div>
+                        <div class="log-scroll"></div>
+                    </div>
+                </section>
+            </main>
+            <aside class="right-rail">
+                <div class="rail-button blue">03-918-01</div>
+                <div class="rail-button orange">03-918-02</div>
+                <div class="rail-button yellow">03-918-03</div>
+                <div class="rail-button purple">03-918-04</div>
+                <div class="rail-button red">03-918-05</div>
+                <div class="rail-button blue">03-918-01</div>
+                <div class="rail-button orange">03-918-02</div>
+                <div class="rail-button yellow">03-918-03</div>
+                <div class="rail-button purple">03-918-04</div>
+                <div class="rail-button red">03-918-05</div>
+            </aside>
+        </div>
+        <footer>
+            <div class="footer-left"></div>
+            <div class="footer-text">STARFLEET INTERFACE&nbsp; • &nbsp;REMOTE CONTROL&nbsp; • &nbsp;ACCESS GRANTED</div>
+            <div class="footer-code">13-10-67</div>
+            <div class="footer-right">[Copyright 2026, Razvan Cristea. All rights reserved]</div>
+        </footer>
+    </div>
+    <div id="confirmOverlay" class="overlay hidden">
+        <div class="dialog">
+            <div class="dialog-title">COMMAND AUTHORIZATION</div>
+            <div id="dialogMessage" class="dialog-message">CONFIRM COMMAND</div>
+            <div class="dialog-buttons">
+                <button id="cancelButton">CANCEL</button>
+                <button id="confirmButton">CONFIRM</button>
+            </div>
+        </div>
+    </div>
+    <script src="/control/control.js"></script>
+</body>
+</html>
