@@ -20,4 +20,4 @@ If json file is converted from Excel must be UTF-8 encoded.
 | updateInterval | 15000 | Milliseconds between the refersh |
 | descriptiveRow | "" | Complete html table row that will be added above the array data |
 
-Redesigned by Răzvan Cristea https://github.com/cristearazvanh Creative Commons BY-NC-SA 4.0, Romania.
+Redesigned by Răzvan Cristea https://github.com/timetraveller255 Creative Commons BY-NC-SA 4.0, Romania.
